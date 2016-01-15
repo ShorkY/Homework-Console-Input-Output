@@ -1,0 +1,56 @@
+using System;
+class Problem2PrintCompanyInfo
+{
+    static void Main()
+    {
+        Console.Write("Company name:    ");
+        string companyName = Console.ReadLine();
+        Console.Write("Company address: ");
+        string companyAddress = Console.ReadLine();
+
+        long phoneNumber;
+        bool checkPhoneNumber = false;
+        do
+        {
+            Console.Write("Phone number:    ");
+            string inputPhone = Console.ReadLine();
+            checkPhoneNumber = long.TryParse(inputPhone, out phoneNumber);
+        } while (!checkPhoneNumber);
+
+        long companyFax;
+        bool checkFaxNumber = false;
+        do
+        {
+            Console.Write("Fax number:  ");
+            string inputFax = Console.ReadLine();
+            checkFaxNumber = long.TryParse(inputFax, out companyFax);
+        } while (!checkFaxNumber);
+
+        Console.Write("Web site:    ");
+        string webSite = Console.ReadLine();
+        Console.Write("Manager first name   ");
+        string managerfFirstName = Console.ReadLine();
+        Console.Write("Manager last name:   ");
+        string managerLastName = Console.ReadLine();
+
+        int managerAge;
+        bool checkAge = false;
+        do
+        {
+            Console.Write("Manager age: ");
+            string inputAge = Console.ReadLine();
+            checkAge = int.TryParse(inputAge, out managerAge);
+        } while (!checkAge);
+
+        long managerPhone;
+        bool checkManagerPhone = false;
+        do
+        {
+            Console.Write("Manager phone:   ");
+            string inputManagerPhone = Console.ReadLine();
+            checkManagerPhone = long.TryParse(inputManagerPhone, out managerPhone);
+        } while (!checkManagerPhone);
+        Console.WriteLine("Thank you");
+
+    }
+}
