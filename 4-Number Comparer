@@ -1,0 +1,18 @@
+using System;
+class Problem4NumberComparer
+{
+    static void Main()
+    {
+        Console.Write("Write one number:");
+        double numberOne = double.Parse(Console.ReadLine());
+        Console.Write("Write another number:");
+        double numberTwo = double.Parse(Console.ReadLine());
+        if (numberOne == numberTwo)
+            Console.WriteLine("Equal numbers");
+        else
+
+            Console.WriteLine("On the next line is the larger number");
+        Console.WriteLine(Math.Max(numberOne, numberTwo));
+    }
+}
+
