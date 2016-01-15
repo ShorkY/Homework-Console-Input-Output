@@ -22,4 +22,4 @@ class Problem3CirclePerimeterAndArea
             Console.WriteLine("Its perimeter is {0:N2} \nIts area is {1:N2}", 2 * pi * radius, pi * radius * radius);
         } while (!checkIfNumber);
     }
-}
+} 
