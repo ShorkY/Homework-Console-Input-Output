@@ -1,0 +1,25 @@
+using System;
+class Problem3CirclePerimeterAndArea
+{
+    static void Main()
+    {
+        float radius;
+        bool checkIfNumber = false;
+        do
+        {
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
+            string requestSplitFirst = "Write a radius";
+            string requestSplitSecond = "      of a circle ";
+            Console.Write(requestSplitFirst + requestSplitSecond);
+            Console.SetCursorPosition(requestSplitFirst.Length + 1, 0);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write("r-");
+            Console.ResetColor();
+            double pi = Math.PI;
+            string inputRadius = Console.ReadLine();
+            checkIfNumber = float.TryParse(inputRadius, out radius);
+            Console.WriteLine("Its perimeter is {0:N2} \nIts area is {1:N2}", 2 * pi * radius, pi * radius * radius);
+        } while (!checkIfNumber);
+    }
+}
