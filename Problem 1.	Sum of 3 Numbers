@@ -1,0 +1,26 @@
+using System;
+class Problem1SumOfTreeRealNumbersgram
+{
+    static void Main()
+    {
+        string firstNumber = "a";
+        string secondNumber = "     b";
+        string tirdNumber = "       c";
+        string sum = "      sum";
+        Console.WriteLine(firstNumber + secondNumber + tirdNumber + sum);
+
+        float  numberOne;
+        float numberTwo;
+        float numberTree;
+
+        numberOne = Convert.ToSingle(Console.ReadLine());
+        Console.SetCursorPosition(firstNumber.Length + 5, 1);
+        numberTwo = Convert.ToSingle(Console.ReadLine());
+        Console.SetCursorPosition(secondNumber.Length + 8, 1);
+        numberTree = Convert.ToSingle(Console.ReadLine());
+        Console.SetCursorPosition(tirdNumber.Length + 13, 1);
+        sum = (numberOne + numberTwo + numberTree).ToString();
+
+        Console.WriteLine("{0}", sum);
+    }
+}
